@@ -1,0 +1,27 @@
+
+.caption-center{
+	top:50%;
+	transform:translateY(-50%);
+	bottom: initial;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.caption-center h2{
+	font-size:50px;
+}
+.caption-center p{
+	font-size:30px;
+}
+
+#footerWebsite{
+	text-decoration: none;
+	color: #000;
+	font-size:80%;
+}
+
+#footerWebsite:hover{
+	text-decoration: none;
+	color: #fff;
+	font-size:80%;
+}
