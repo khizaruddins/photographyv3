@@ -45,6 +45,61 @@
 </nav>
 
 </body>	
+
+
+
+<div class="container" id="map" style="height:400px;background:yellow"></div>
+
+
+<div class="container p-3">
+	<h2>Send us a Message</h2>
+	<form class="form-group" method="POST">
+		<label for="subject">Subject:</label>
+		<input class="form-control" type="text" id="subject" placeholder="Subject" name="subject">
+	
+		<label for="message">Message:</label>
+		<textarea class="form-control" rows="5" id="message" name="message"></textarea>
+		<br>
+		<button class="btn btn-outline-secondary" type="submit">Send</button>
+	</form>
+</div>
+
+<footer class="bg-dark">
+	<div class="container p-5">
+		<ul style="color:#000; list-style:none"><h5>Owner Information</h5>
+			<li>Name: Khizaruddin Syed</li>
+			<li>Contact: +917387406602</li>
+			<li>Connect me with:</li>
+			
+		</ul>
+
+
+		<div class="container">
+			<a href="#" class="pr-3 pl-4" id="footerWebsite"><img src="https://png.icons8.com/metro/50/000000/google-plus.png"></a>
+			<a href="https://in.linkedin.com/in/khizaruddins-5412a3117" class="pr-3 pl-3" id="footerWebsite"><img src="https://png.icons8.com/metro/50/000000/linkedin.png"></a>
+			<a href="https://github.com/khizaruddins" class="pr-3 pl-3" id="footerWebsite"><img src="https://png.icons8.com/metro/50/000000/github.png"></a>
+			<a href="https://stackoverflow.com/users/7733881/syed-khizaruddin" class="pr-3 pl-3" id="footerWebsite"><img src="https://png.icons8.com/metro/50/000000/stackoverflow.png"></a>
+		</div>
+		<br>
+		<center><small style="color:#000; font-size:15px;">&copy; Copyright All Rights Reserved 
+			<br>
+		<a href="#" id="footerWebsite">www.thephotographyv3.com</a></small></center>
+	</div>
+</footer>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
